@@ -1,6 +1,9 @@
 /* основной #212121 */
 /* вторичный #757575 */
 /* header */
+html{
+    box-sizing: inherit;
+}
 :root{
     --primari-text-color: #757575;
     --title-text-color:#212121;
@@ -11,9 +14,48 @@ body{
     color: var(--primari-white-color);
     font-family: Roboto, sans-serif;
     font-size: 14px;
-
+}
+.container{ 
+    box-sizing: border-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline:1.5px solid #2F303A;
 }
 /* Header */
+
+.main-nav{
+    display: flex;
+    align-items: center;
+
+}
+.menu{
+    margin-left: 93px;
+    display:flex;
+    padding: 0px;
+}
+.menu .item:not(:last-child){
+    margin-right: 50px;
+}
+.menu .item{
+    display: block;
+}
+.box-logo{
+    display: block;
+    padding: 0px;
+}
+.header-contakt{
+    margin-left: auto;
+    display: flex;
+    padding: 0px;
+}
+.header-contakt .item + .item{
+    display: block;
+    margin-left: 50px;
+}
+
 .logo{
     color:var(--title-text-color);
 
@@ -27,6 +69,10 @@ body{
     color: var(--accent-color);
 }
 .nav{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color:var(--title-text-color);
 
     font-weight: 500;
@@ -38,6 +84,9 @@ body{
 .nav:hover,
 .nav:focus,
 .nav-current{
+    display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
     color:var(--accent-color);
     text-decoration: none;
 }
@@ -56,10 +105,18 @@ body{
 /* body */
 /* Blok 1 */
 .hero{
+    text-align: center;
     background-color: #2F303A;
 }
 .hero-title{
-  
+    display: block;
+    width: 696px;
+        height: 120px;
+        margin: 0 auto 0 auto;
+    
+    padding-top: 200px;
+    padding-bottom: 30px;
+   
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -68,7 +125,23 @@ body{
         text-transform: uppercase;
 }
 /* Blok2 */
+.features{
+padding: 94px 0 94px 0;
+margin: 0px;
+ display: flex;
+    flex-wrap: wrap;
+    
+}
+.features .item{
+   width: 270px;
+   margin-right: 30px;
+}
+.features .item:nth-child(4n){
+    margin-right: 0px;
+}
 .feature-title{
+    margin: 0px;
+
     color:var(--title-text-color);
     text-transform: uppercase;
     
@@ -84,6 +157,8 @@ body{
       
 }
 .lessons{
+   margin-top: 0px;
+   margin-bottom: 50px;
     color: var(--title-text-color);
 
         font-weight: 700;
@@ -92,6 +167,19 @@ body{
         text-align: center;
         letter-spacing: 0.03em;
         
+}
+.img-item{
+    margin-right: 30px;
+    
+}
+.img-item:nth-child(3n){
+    margin-right: 0px;
+}
+.img-work{
+display: flex;
+flex-wrap: wrap;
+margin: 0px;
+padding: 0px;
 }
 .buttons{
     color: var(--title-text-color);
@@ -108,7 +196,15 @@ body{
     color:var(--primari-white-color);
     background-color: var(--accent-color);
 }
-.button{
+.button{ 
+    margin-bottom: 200px;
+
+    border: 1px solid transparent;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
     color:var(--primari-white-color);
     background-color: var(--accent-color);
 
@@ -124,6 +220,10 @@ body{
     background-color: #F5F4FA;
 }
 .our-team{
+        padding-top: 94px;
+        padding-bottom: 50px;
+        margin: 0px;
+
     color:var(--title-text-color);
     
         font-weight: 700;
@@ -132,6 +232,17 @@ body{
         text-align: center;
         letter-spacing: 0.03em;
     
+}
+.comand{
+    display: inline-block;
+    margin-right: 30px; 
+}
+.comand:nth-child(4n){
+    margin-right: 0px;
+}
+.comands{
+    padding: 0px;
+    margin: 0pt;
 }
 .our-team-name{
     color:var(--title-text-color);
