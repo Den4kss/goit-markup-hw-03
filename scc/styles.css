@@ -18,11 +18,13 @@ body{
 .container{ 
     box-sizing: border-box;
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline:1.5px solid #2F303A;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 /* Header */
 
@@ -182,10 +184,14 @@ margin: 0px;
 padding: 0px;
 }
 .buttons{
+    padding: 6px 22px;
     color: var(--title-text-color);
     background-color: #F5F4FA;;
     cursor: pointer;
     border: none;
+
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     border-radius: 4px;
 
         font-weight: 500;
         font-size: 16px;
@@ -218,6 +224,7 @@ padding: 0px;
 /* Blok 5 */
 .team{
     background-color: #F5F4FA;
+    width: auto;
 }
 .our-team{
         padding-top: 94px;
@@ -233,9 +240,16 @@ padding: 0px;
         letter-spacing: 0.03em;
     
 }
+img{ display: block;
+    max-width: 100%;
+    height: auto;
+}
 .comand{
+    background: #FFFFFF;
     display: inline-block;
     margin-right: 30px; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
 .comand:nth-child(4n){
     margin-right: 0px;
@@ -243,8 +257,22 @@ padding: 0px;
 .comands{
     padding: 0px;
     margin: 0pt;
+    padding-bottom: 94px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    flex-direction:column;  
 }
 .our-team-name{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    
     color:var(--title-text-color);
 
         font-weight: 500;
@@ -253,6 +281,11 @@ padding: 0px;
         letter-spacing: 0.03em;
 }
 .specialist{
+    display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
     color:var(--primari-text-color);
 
         font-weight: 400;
@@ -261,6 +294,8 @@ padding: 0px;
         letter-spacing: 0.03em;
 }
 .titels{
+    margin: 0px;
+
     color:var(--title-text-color);
 
         font-weight: 700;
@@ -272,6 +307,8 @@ padding: 0px;
         
 }
 .Works{ 
+    margin: 0px;
+    margin-top: 4px;
     color:var(--primari-text-color);
 
         font-weight: 400;
@@ -281,6 +318,8 @@ padding: 0px;
 }
 .blok{
     text-decoration: none;
+    background: #FFFFFF;
+    outline: 1px solid #EEEEEE;
 }
 /* Footer */
 .footer{
@@ -297,6 +336,18 @@ font-family: 'Raleway';
     text-decoration: none;
     
 }
+.footer-address {
+    display: block;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+    padding-right: auto;
+}
+.footer-mail, .footer-tel {
+padding-top: 9px;
+}
+
 .address{
     color:#FFFFFF;
     font-family: 'Roboto';
@@ -318,6 +369,52 @@ font-family: 'Raleway';
 .footer-contakts:focus{
         color: var(--accent-color);
 }
+.footer>.container>.box-logo{
+    padding-top: 60px;
+}
+
 ul{
     list-style: none
+}
+/* Портфолио*/
+.services{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px; 
+    
+}
+.direction{
+    display: block;
+    padding: 0px;
+    
+}
+.direction:not(:last-child){
+ margin-right: 8px;   
+}
+.group{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.group:nth-child(3n){
+    padding-right: 0px;
+}
+.group:nth-last-child(-n+3){
+    padding-bottom: 0px;
+}
+.flex-group{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 34px;
+}
+.keys{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.box{
+    margin: 20px 24px;
 }
