@@ -14,6 +14,7 @@ body{
     color: var(--primari-white-color);
     font-family: Roboto, sans-serif;
     font-size: 14px;
+    margin: 0px;
 }
 .container{ 
     box-sizing: border-box;
@@ -33,10 +34,16 @@ body{
     align-items: center;
 
 }
+.box-menu{
+    display: flex;
+    align-items: center;
+}
 .menu{
+    margin: 0px;
     margin-left: 93px;
     display:flex;
     padding: 0px;
+    
 }
 .menu .item:not(:last-child){
     margin-right: 50px;
@@ -93,6 +100,9 @@ body{
     text-decoration: none;
 }
 .contakt{
+        padding-top: 32px;
+        padding-bottom: 32px;
+
     color: var(--primari-text-color);
     
         font-weight: 500;
@@ -109,14 +119,15 @@ body{
 .hero{
     text-align: center;
     background-color: #2F303A;
+    padding: 200px 0;
 }
 .hero-title{
-    display: block;
-    width: 696px;
-        height: 120px;
+    
+    max-width: 696px;
+        
         margin: 0 auto 0 auto;
     
-    padding-top: 200px;
+   
     padding-bottom: 30px;
    
         font-weight: 900;
@@ -127,10 +138,17 @@ body{
         text-transform: uppercase;
 }
 /* Blok2 */
+.team{
+    background-color: #F5F4FA;
+    width: auto;
+}
+.section{
+    padding: 94px 0px;
+}
 .features{
-padding: 94px 0 94px 0;
-margin: 0px;
- display: flex;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
     flex-wrap: wrap;
     
 }
@@ -203,17 +221,15 @@ padding: 0px;
     background-color: var(--accent-color);
 }
 .button{ 
-    margin-bottom: 200px;
-
     border: 1px solid transparent;
     text-align: center;
     border-radius: 4px;
     padding: 10px 32px;
-    min-width: 200px;
-
+    
     color:var(--primari-white-color);
     background-color: var(--accent-color);
 
+    line-height: 30px;
     font-weight: 700;
     font-size: 16px;
 }
@@ -222,10 +238,7 @@ padding: 0px;
     background-color: #188CE8;      
 }
 /* Blok 5 */
-.team{
-    background-color: #F5F4FA;
-    width: auto;
-}
+
 .our-team{
         padding-top: 94px;
         padding-bottom: 50px;
@@ -263,15 +276,15 @@ img{ display: block;
     flex-wrap: wrap;
 }
 .box{
+    margin: 0px;
+    padding: 30px 0;
     display: flex;
     flex-direction:column;  
 }
 .our-team-name{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
     
     color:var(--title-text-color);
 
@@ -281,11 +294,9 @@ img{ display: block;
         letter-spacing: 0.03em;
 }
 .specialist{
-    display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 30px;
+    margin: 0px;
+    text-align: center;
+        
     color:var(--primari-text-color);
 
         font-weight: 400;
@@ -324,6 +335,7 @@ img{ display: block;
 /* Footer */
 .footer{
     background-color: rgba(47, 48, 58, 1);
+    padding: 60px;
 }
 .logo-footer{ 
     color: #FFFFFF;
@@ -340,9 +352,7 @@ font-family: 'Raleway';
     display: block;
     margin: 0px;
     padding-top: 20px;
-    padding-bottom: 60px;
     padding-left: 0px;
-    padding-right: auto;
 }
 .footer-mail, .footer-tel {
 padding-top: 9px;
@@ -369,14 +379,15 @@ padding-top: 9px;
 .footer-contakts:focus{
         color: var(--accent-color);
 }
-.footer>.container>.box-logo{
-    padding-top: 60px;
-}
+
 
 ul{
     list-style: none
 }
 /* Портфолио*/
+.box-portfolio{
+    padding: 20px 24px;
+}
 .services{
     display: flex;
     justify-content: center;
@@ -395,14 +406,14 @@ ul{
 .group{
     display: flex;
     flex-wrap: wrap;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .group:nth-child(3n){
-    padding-right: 0px;
+    margin-right: 0px;
 }
 .group:nth-last-child(-n+3){
-    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .flex-group{
     display: flex;
@@ -415,6 +426,13 @@ ul{
     margin-top: 94px;
     margin-bottom: 94px;
 }
-.box{
-    margin: 20px 24px;
+.line{
+    border: 1px solid #ECECEC;
+}
+.current:hover,
+.current:focus{
+    background: var(--accent-color);
+    color: var(--primari-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     border-radius: 4px;
 }
