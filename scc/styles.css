@@ -138,12 +138,16 @@ body{
         text-transform: uppercase;
 }
 /* Blok2 */
+
 .team{
     background-color: #F5F4FA;
-    width: auto;
+    
 }
 .section{
     padding: 94px 0px;
+}
+.reset{
+    padding-bottom: 0px;
 }
 .features{
     padding: 0px;
@@ -215,6 +219,7 @@ padding: 0px;
         font-size: 16px;
         line-height: 26px;
 }
+.current,
 .buttons:hover,
 .buttons:focus{
     color:var(--primari-white-color);
@@ -240,9 +245,8 @@ padding: 0px;
 /* Blok 5 */
 
 .our-team{
-        padding-top: 94px;
-        padding-bottom: 50px;
-        margin: 0px;
+       margin-top: 0px;
+       margin-bottom: 50px;
 
     color:var(--title-text-color);
     
@@ -270,7 +274,6 @@ img{ display: block;
 .comands{
     padding: 0px;
     margin: 0pt;
-    padding-bottom: 94px;
     
     display: flex;
     flex-wrap: wrap;
@@ -393,7 +396,7 @@ ul{
     justify-content: center;
     margin: 0px;
     padding: 0px; 
-    
+    margin-bottom: 50px; 
 }
 .direction{
     display: block;
@@ -420,11 +423,10 @@ ul{
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
-    padding-top: 34px;
 }
 .keys{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .line{
     border: 1px solid #ECECEC;
